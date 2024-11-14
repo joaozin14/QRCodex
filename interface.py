@@ -60,7 +60,7 @@ if input_text:
             label="Download QRCode",
             data=img_bytes,
             file_name="QRCode.png",
-            mime="video/mp4"
+            mime="png"
         )
     except Exception as e:
         st.error(f"Erro ao processar o vídeo: {e}")
