@@ -55,7 +55,6 @@ input_text = st.text_input("")
 if input_text:
     try:
         img_bytes = fzr_qrcode(input_text)
-        # Renderiza o botão normalmente; a classe CSS já cuida da centralização
         st.download_button(
             label="Download QRCode",
             data=img_bytes,
